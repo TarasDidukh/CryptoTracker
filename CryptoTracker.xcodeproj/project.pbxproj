@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 77;
+	objectVersion = 71;
 	objects = {
 
 /* Begin PBXContainerItemProxy section */
@@ -30,7 +30,7 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		E2710B8D2D9C4FDF00FF04CA /* Exceptions for "CryptoTracker" folder in "CryptoTracker" target */ = {
+		E2710B8D2D9C4FDF00FF04CA /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Resources/Info.plist,
@@ -40,24 +40,9 @@
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		E2710B2F2D9C4DBE00FF04CA /* CryptoTracker */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				E2710B8D2D9C4FDF00FF04CA /* Exceptions for "CryptoTracker" folder in "CryptoTracker" target */,
-			);
-			path = CryptoTracker;
-			sourceTree = "<group>";
-		};
-		E2710D172D9D290100FF04CA /* CryptoTrackerTests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = CryptoTrackerTests;
-			sourceTree = "<group>";
-		};
-		E2710DD92D9D3EBC00FF04CA /* CryptoTrackerUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = CryptoTrackerUITests;
-			sourceTree = "<group>";
-		};
+		E2710B2F2D9C4DBE00FF04CA /* CryptoTracker */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (E2710B8D2D9C4FDF00FF04CA /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = CryptoTracker; sourceTree = "<group>"; };
+		E2710D172D9D290100FF04CA /* CryptoTrackerTests */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = CryptoTrackerTests; sourceTree = "<group>"; };
+		E2710DD92D9D3EBC00FF04CA /* CryptoTrackerUITests */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = CryptoTrackerUITests; sourceTree = "<group>"; };
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -200,6 +185,7 @@
 				};
 			};
 			buildConfigurationList = E2710B282D9C4DBE00FF04CA /* Build configuration list for PBXProject "CryptoTracker" */;
+			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -208,7 +194,6 @@
 			);
 			mainGroup = E2710B242D9C4DBE00FF04CA;
 			minimizedProjectReferenceProxies = 1;
-			preferredProjectObjectVersion = 77;
 			productRefGroup = E2710B2E2D9C4DBE00FF04CA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
