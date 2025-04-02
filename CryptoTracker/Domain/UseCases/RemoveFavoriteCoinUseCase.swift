@@ -1,0 +1,22 @@
+//
+//  RemoveFavoriteCoinUseCase.swift
+//  CryptoTracker
+//
+//  Created by Taras Didukh on 01.04.2025.
+//
+
+protocol RemoveFavoriteCoinUseCase {
+    func execute(_ coin: CoinAsset) async throws -> CoinAsset
+}
+
+final class RemoveFavoriteCoinUseCaseImpl: RemoveFavoriteCoinUseCase {
+    private let favoriteCoinsRepository: FavoriteCoinsRepository
+    
+    init(favoriteCoinsRepository: FavoriteCoinsRepository) {
+        self.favoriteCoinsRepository = favoriteCoinsRepository
+    }
+    
+    func execute(_ coin: CoinAsset) async throws -> CoinAsset {
+        try await favoriteCoinsRepository.remove(coin)
+    }
+}

@@ -1,0 +1,17 @@
+//
+//  development-config.xcconfig
+//  CryptoTracker
+//
+//  Created by Taras Didukh on 01.04.2025.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+// WARNING: Do not include config settings to the git reporitory.
+// for test task purposes I will include it
+
+COINGECKO_API_KEY = CG-LCNBSi9JXq7kMY3UA3XGUpni
+COINGECKO_BASE_URL = api.coingecko.com/api/v3/
+
+BINANCE_BASE_URL = api.binance.com/api/v3/
