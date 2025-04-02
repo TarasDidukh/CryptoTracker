@@ -40,21 +40,23 @@ struct FavoriteAssetItemView: View {
             
             Spacer()
             
-            if let price = model.currentPrice {
-                VStack(alignment: .trailing, spacing: 2) {
+            VStack(alignment: .trailing, spacing: 2) {
+                if let price = model.currentPrice {
                     Text(price.nsValue, formatter: getFormatter(price))
                         .foregroundStyle(priceColor)
                         .animation(.easeInOut(duration: 1), value: viewModel.isPositivePriceChange)
-                        
-                       
-                    if let percentChange = model.pricePercentageChange {
-                        Text(percentChange.nsValue, formatter: percentageFormatter)
-                            .foregroundStyle(percentChange >= 0 ? Color.green : Color.red)
-                    }
+                } else {
+                    Text("Unknown $")
+                        .foregroundStyle(Color(.darkPrimary))
                 }
-                .font(.system(size: 12, design: .monospaced).weight(.bold))
-                .lineLimit(1)
+                   
+                if let percentChange = model.pricePercentageChange {
+                    Text(percentChange.nsValue, formatter: percentageFormatter)
+                        .foregroundStyle(percentChange >= 0 ? Color.green : Color.red)
+                }
             }
+            .font(.system(size: 12, design: .monospaced).weight(.bold))
+            .lineLimit(1)
         }
         .padding()
         .clipShape(RoundedRectangle(cornerRadius: 10))

@@ -44,10 +44,11 @@ final class RealTimePriceUpdateUseCaseImpl: RealTimePriceUpdateUseCase {
             timer?.invalidate()
             return
         }
-        Task {
+        Task { @MainActor in
             guard let updatedCoins = try? await coinAssetsRepository.fetchLatestPrices(for: coins) else {
                 return
             }
+            self.coins = updatedCoins
             completion(updatedCoins)
         }
     }
