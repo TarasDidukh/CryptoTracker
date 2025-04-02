@@ -577,7 +577,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1620;
-				LastUpgradeCheck = 1400;
+				LastUpgradeCheck = 1620;
 				TargetAttributes = {
 					E2710B2C2D9C4DBE00FF04CA = {
 						CreatedOnToolsVersion = 16.2;
@@ -593,7 +593,7 @@
 				};
 			};
 			buildConfigurationList = E2710B282D9C4DBE00FF04CA /* Build configuration list for PBXProject "CryptoTracker" */;
-			compatibilityVersion = "Xcode 14.0";
+			compatibilityVersion = "Xcode 15.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
