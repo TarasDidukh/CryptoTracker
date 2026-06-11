@@ -18,7 +18,7 @@ Screenshots:
 
 Demo video:
 
-https://github.com/user-attachments/asset/1409ee96-bde8-4b06-8da5-a3fd145c0cfe
+https://github.com/user-attachments/asset/988998-a3fd145c0cfe
 
 
 
