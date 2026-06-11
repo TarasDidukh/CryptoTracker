@@ -16,9 +16,6 @@ Screenshots:
   <img src="https://github.com/user-attachments/assets/34161e33-8b68-4927-bff0-4b48e94b1fab" width="300">
 </p>
 
-Demo video:
-
-https://github.com/user-attachments/asset/988998-a3fd145c0cfe
 
 
 
